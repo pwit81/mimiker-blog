@@ -11,7 +11,7 @@ development. Read below what our team has coded&amp;nbsp;recently!&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The ioctl() function manipulates the underlying device parameters of special files.  In particular, many operating characteristics of character special files (e.g. terminals) may be controlled with ioctl()&amp;nbsp;requests.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;And that&amp;#8217;s precisely the reason we need &lt;code&gt;ioctl&lt;/code&gt;. Mimiker terminal handling capabilities are mediocre. We need colors, fonts and special characters&amp;nbsp;support.cahirwpz/mimiker#568 &lt;/p&gt;
+&lt;p&gt;And that&amp;#8217;s precisely the reason we need &lt;code&gt;ioctl&lt;/code&gt;. Mimiker terminal handling capabilities are mediocre. We need colors, fonts and special characters support.&amp;nbsp;https://github.com/cahirwpz/mimiker#568 &lt;/p&gt;
 &lt;h5&gt;netbsd userland&amp;nbsp;port&lt;/h5&gt;
 &lt;h5&gt;progress in signal&amp;nbsp;handling&lt;/h5&gt;</content></entry><entry><title>Welcome!</title><link href="https://pwit81.github.io/yetanotherpagestest/welcome.html" rel="alternate"></link><published>2019-10-11T10:20:00+02:00</published><updated>2019-10-11T10:20:00+02:00</updated><author><name>Mimiker Team</name></author><id>tag:pwit81.github.io,2019-10-11:/yetanotherpagestest/welcome.html</id><content type="html">&lt;p&gt;Welcome to Mimiker&amp;nbsp;blog!&lt;/p&gt;
 &lt;p&gt;Good news&amp;nbsp;everyone!&lt;/p&gt;</content></entry></feed>
