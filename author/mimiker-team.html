@@ -20,7 +20,7 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://pwit81.github.io/yetanotherpagestest/1-weekly-progress-report.html">#1 Weekly progress&nbsp;report</a></h1>
+                    <h1 class="entry-title"><a href="https://pwit81.github.io/yetanotherpagestest/1-weekly-progress-report.html">#1 weekly progress&nbsp;report</a></h1>
 <footer class="post-info">
         <abbr class="published" title="2019-11-21T10:20:00+01:00">
                 Published: czw 21 listopad 2019
@@ -33,7 +33,7 @@
 
 </footer><!-- /.post-info --><p>Good news everyone, we start posting weekly updates on Mimiker kernel
 development. Read below what our team has coded&nbsp;recently!</p>
-<h4><code>ioctl</code> syscall</h4>
+<h3><code>ioctl</code> syscall</h3>
 <p>As <a href="https://netbsd.gw.com/cgi-bin/man-cgi?ioctl">NetBSD manpage</a>&nbsp;says</p>
 <blockquote>
 <p>The ioctl() function manipulates the underlying device parameters of
@@ -44,7 +44,7 @@ ioctl()&nbsp;requests.</p>
 <p>And that&#8217;s precisely the reason we need <code>ioctl</code>. Mimiker terminal
 handling capabilities are mediocre. We need colors, fonts and special
 characters support in order to implement genuine terminal&nbsp;handling.</p>
-<h4>netbsd userland&nbsp;port</h4>
+<h3>netbsd userland&nbsp;port</h3>
 <p>No <span class="caps">OS</span> kernel itself poses any value to end users. Therefore an
 extensive effort is being put to run some usefull stuff on top of
 Mimiker kernel. We already have some success stories here, like
@@ -54,8 +54,8 @@ brings in addition to simple NetBSD ports of <code>/usr/bin</code> tools (<code>
 <code>cmp</code>, <code>col</code>, <code>cut</code>, <code>echo</code>, <code>find</code>, <code>head</code>, <code>grep</code>, <code>join</code>, <code>kill</code>,
 <code>sed</code>, <code>tail</code>, <code>tr</code>, <code>wc</code>), the Korn Shell interpreter <code>ksh</code>. Though
 not fully functional yet, it will provide true Unix&nbsp;experience!</p>
-<h4>progress in signal&nbsp;handling</h4>
-<h5>syscalls&nbsp;cleanup</h5>
+<h3>progress in signal&nbsp;handling</h3>
+<h3>syscalls&nbsp;cleanup</h3>
 <p>naprawienie getdirentries przywróciło ls dołożenie ioctl pozwoli nam
 zrobić obsługę terminala • naprawienie execve przywróciło działanie
 skryptów lua • dołożyliśmy wywołania systemowe, które przywróciły
