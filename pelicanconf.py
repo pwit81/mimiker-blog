@@ -1,15 +1,14 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 
 AUTHOR = 'Mimiker Team'
 SITENAME = 'The Mimiker Project'
 SITESUBTITLE = 'a Unix-like operating system'
-SITEURL = 'https://pwit81.github.io/mimiker-blog'
+SITEURL = 'https://mimiker.ii.uni.wroc.pl'
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Warsaw'
 
 DEFAULT_LANG = 'en'
 
@@ -20,23 +19,16 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# # Blogroll
-# LINKS = (('Pelican', 'http://getpelican.com/'),
-#          ('Python.org', 'http://python.org/'),
-#          ('Jinja2', 'http://jinja.pocoo.org/'),
-#          ('You can modify those links in your config file', '#'),)
+# Social widget
+SOCIAL = ()
 
-# # Social widget
-# SOCIAL = (('You can add links in your config file', '#'),
-#           ('Another social link', '#'),)
-
-LINKS = (('Mimiker on Github', 'https://github.com/cahirwpz/mimiker/'),
-        ('Code browser', 'https://mimiker.ii.uni.wroc.pl/source/xref/mimiker/'),
-        ('Our department II@UWr', 'http://www.ii.uni.wroc.pl/'),)
+LINKS = (('GitHub', 'https://github.com/cahirwpz/mimiker/'),
+         ('OpenGrok', 'https://mimiker.ii.uni.wroc.pl/source/xref/mimiker/'),
+         ('II UWr', 'https://www.ii.uni.wroc.pl/'),)
 
 DEFAULT_PAGINATION = 10
 
 TYPOGRIFY = True
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True

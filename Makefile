@@ -1,6 +1,8 @@
 PY?=python3
 PELICAN?=pelican
-PELICANOPTS=
+PELICANOPTS= -t ./notmyidea
+
+export LANG=C
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
