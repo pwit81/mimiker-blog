@@ -45,6 +45,7 @@ html:
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
+	rm -rf __pycache__
 
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
@@ -80,3 +81,5 @@ github: publish
 
 
 .PHONY: html help clean regenerate serve serve-global devserver publish github
+
+# vim: ts=8 sw=8 noet
