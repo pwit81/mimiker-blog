@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>The Mimiker Project</title>
+        <link rel="stylesheet" href="https://pwit81.github.io/mimiker-blog/theme/css/main.css" />
+        <link href="https://pwit81.github.io/mimiker-blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Mimiker Project Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://pwit81.github.io/mimiker-blog/">The Mimiker Project <strong>a Unix-like operating system</strong></a></h1>
+                <nav><ul>
+                    <li><a href="https://pwit81.github.io/mimiker-blog/pages/about.html">About</a></li>
+                    <li><a href="https://pwit81.github.io/mimiker-blog/pages/documentation.html">Documentation</a></li>
+                    <li><a href="https://pwit81.github.io/mimiker-blog/category/mimiker-blog.html">Mimiker blog</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="https://pwit81.github.io/mimiker-blog/1-weekly-progress-report.html">#1 weekly progress&nbsp;report</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2019-11-21T10:20:00+01:00">
+                Published: czw 21 listopad 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://pwit81.github.io/mimiker-blog/author/mimiker-team.html">Mimiker Team</a>
+        </address>
+<p>In <a href="https://pwit81.github.io/mimiker-blog/category/mimiker-blog.html">Mimiker blog</a>.</p>
+
+</footer><!-- /.post-info --><p>Good news everyone, we start posting weekly updates on Mimiker kernel
+development. Read below what our team has coded&nbsp;recently!</p>
+<h3><code>ioctl</code> syscall</h3>
+<p>As <a href="https://netbsd.gw.com/cgi-bin/man-cgi?ioctl">NetBSD manpage</a>&nbsp;says</p>
+<blockquote>
+<p>The ioctl() function manipulates the underlying device parameters of
+special files.  In particular, many operating characteristics of
+character special files (e.g. terminals) may be controlled with
+ioctl()&nbsp;requests.</p>
+</blockquote>
+<p>And that&#8217;s precisely the reason we need <code>ioctl</code>. Mimiker terminal
+handling capabilities are mediocre. We need colors, fonts and special
+characters support in order to implement genuine terminal&nbsp;handling.</p>
+<h3>NetBSD userland&nbsp;port</h3>
+<p>No <span class="caps">OS</span> kernel itself poses any value to end users. Therefore an
+extensive effort is being put to run useful stuff on top of Mimiker
+kernel. We already have some success stories here, like running Doom
+(in non-interactive mode) and lua script interpreter, but more
+elementary command-line tools are needed. Our latest codebase brings in
+addition to simple NetBSD ports of <code>/usr/bin</code> tools (<code>cat</code>, <code>cmp</code>,
+<code>col</code>, <code>cut</code>, <code>echo</code>, <code>find</code>, <code>head</code>, <code>grep</code>, <code>join</code>, <code>kill</code>, <code>sed</code>,
+<code>tail</code>, <code>tr</code>, <code>wc</code>), the Korn Shell interpreter <code>ksh</code>. Though not
+fully functional yet, it will provide true Unix&nbsp;experience!</p>
+<h3>syscalls&nbsp;cleanup</h3>
+<p>Things stop working from time to time. Earlier transformations of
+system call framework introduced bugs to <code>getdirentries</code> and <code>execve</code>
+syscalls, thus making <code>ls</code> command and <code>lua</code> interpreter crashy. This
+has been&nbsp;fixed.</p>
+<h3>progress in signal&nbsp;handling</h3>
+<p>Stdlib functions <code>setjmp</code>/<code>longjmp</code> now save/restore
+signal mask. Earlier implementations didn&#8217;t and that was another
+reason for buggy <code>lua</code>.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://pwit81.github.io/mimiker-blog/welcome.html" rel="bookmark"
+                           title="Permalink to Welcome!">Welcome!</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-10-11T10:20:00+02:00">
+                Published: pią 11 październik 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://pwit81.github.io/mimiker-blog/author/mimiker-team.html">Mimiker Team</a>
+        </address>
+<p>In <a href="https://pwit81.github.io/mimiker-blog/category/mimiker-blog.html">Mimiker blog</a>.</p>
+
+</footer><!-- /.post-info -->                <p>Welcome to Mimiker&nbsp;blog!</p>
+<p>Good news&nbsp;everyone!</p>
+                <a class="readmore" href="https://pwit81.github.io/mimiker-blog/welcome.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://github.com/cahirwpz/mimiker/">Mimiker on Github</a></li>
+                            <li><a href="https://mimiker.ii.uni.wroc.pl/source/xref/mimiker/">Code browser</a></li>
+                            <li><a href="http://www.ii.uni.wroc.pl/">Our department II@UWr</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="https://pwit81.github.io/mimiker-blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
