@@ -34,7 +34,8 @@ fully functional yet, it will provide true Unix&amp;nbsp;experience!&lt;/p&gt;
 system call framework introduced bugs to &lt;code&gt;getdirentries&lt;/code&gt; and &lt;code&gt;execve&lt;/code&gt;
 syscalls, thus making &lt;code&gt;ls&lt;/code&gt; command and &lt;code&gt;lua&lt;/code&gt; interpreter crashy. This
 has been&amp;nbsp;fixed.&lt;/p&gt;
-&lt;h3&gt;progress in signal handling &lt;code&gt;setjmp&lt;/code&gt;/&lt;code&gt;longjmp&lt;/code&gt; now&amp;nbsp;save/restore&lt;/h3&gt;
-&lt;p&gt;signal mask. Earlier implementations didn&amp;#8217;t and that was another
+&lt;h3&gt;progress in signal&amp;nbsp;handling&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;setjmp&lt;/code&gt;/&lt;code&gt;longjmp&lt;/code&gt; now save/restore
+signal mask. Earlier implementations didn&amp;#8217;t and that was another
 reason for buggy &lt;code&gt;lua&lt;/code&gt;.&lt;/p&gt;</content></entry><entry><title>Welcome!</title><link href="https://pwit81.github.io/yetanotherpagestest/welcome.html" rel="alternate"></link><published>2019-10-11T10:20:00+02:00</published><updated>2019-10-11T10:20:00+02:00</updated><author><name>Mimiker Team</name></author><id>tag:pwit81.github.io,2019-10-11:/yetanotherpagestest/welcome.html</id><content type="html">&lt;p&gt;Welcome to Mimiker&amp;nbsp;blog!&lt;/p&gt;
 &lt;p&gt;Good news&amp;nbsp;everyone!&lt;/p&gt;</content></entry></feed>
