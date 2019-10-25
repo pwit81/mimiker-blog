@@ -1,0 +1,26 @@
+Do 21 Oct 2019:
+
+-- coś z sygnałami
+
+pr: https://github.com/cahirwpz/mimiker/pull/566
+
+
++-- rudimentary support for ioctl (18oct)
+
++-- netbsd-programs?
+
++-- syscall-cleanup (16oct) i jakieś inne związane z syscallami(np 13oct)
+
+
++--- gdb next user (userspace debugging, traes on border user-kernelland)
+(branch user-backtrace?)
+
+
+
+Good news everyone, we start posting weekly updates on Mimiker kernel
+development. Read below what our team has coded recently!
+
+
+
+
+
