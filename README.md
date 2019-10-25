@@ -1,2 +1,1 @@
-# yetanotherpagestest
-Yet another Github Pages test
+# Mimiker Project blog page
