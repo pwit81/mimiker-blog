@@ -21,18 +21,24 @@ handling capabilities are mediocre. We need colors, fonts and special
 characters support in order to implement genuine terminal&amp;nbsp;handling.&lt;/p&gt;
 &lt;h3&gt;netbsd userland&amp;nbsp;port&lt;/h3&gt;
 &lt;p&gt;No &lt;span class="caps"&gt;OS&lt;/span&gt; kernel itself poses any value to end users. Therefore an
-extensive effort is being put to run some usefull stuff on top of
-Mimiker kernel. We already have some success stories here, like
-running Doom (in non-interactive mode) and lua script interpreter, but
-more elemenary command-line tools are needed. Our latest codebase
-brings in addition to simple NetBSD ports of &lt;code&gt;/usr/bin&lt;/code&gt; tools (&lt;code&gt;cat&lt;/code&gt;,
-&lt;code&gt;cmp&lt;/code&gt;, &lt;code&gt;col&lt;/code&gt;, &lt;code&gt;cut&lt;/code&gt;, &lt;code&gt;echo&lt;/code&gt;, &lt;code&gt;find&lt;/code&gt;, &lt;code&gt;head&lt;/code&gt;, &lt;code&gt;grep&lt;/code&gt;, &lt;code&gt;join&lt;/code&gt;, &lt;code&gt;kill&lt;/code&gt;,
-&lt;code&gt;sed&lt;/code&gt;, &lt;code&gt;tail&lt;/code&gt;, &lt;code&gt;tr&lt;/code&gt;, &lt;code&gt;wc&lt;/code&gt;), the Korn Shell interpreter &lt;code&gt;ksh&lt;/code&gt;. Though
-not fully functional yet, it will provide true Unix&amp;nbsp;experience!&lt;/p&gt;
-&lt;h3&gt;progress in signal&amp;nbsp;handling&lt;/h3&gt;
+extensive effort is being put to run usefull stuff on top of Mimiker
+kernel. We already have some success stories here, like running Doom
+(in non-interactive mode) and lua script interpreter, but more
+elemenary command-line tools are needed. Our latest codebase brings in
+addition to simple NetBSD ports of &lt;code&gt;/usr/bin&lt;/code&gt; tools (&lt;code&gt;cat&lt;/code&gt;, &lt;code&gt;cmp&lt;/code&gt;,
+&lt;code&gt;col&lt;/code&gt;, &lt;code&gt;cut&lt;/code&gt;, &lt;code&gt;echo&lt;/code&gt;, &lt;code&gt;find&lt;/code&gt;, &lt;code&gt;head&lt;/code&gt;, &lt;code&gt;grep&lt;/code&gt;, &lt;code&gt;join&lt;/code&gt;, &lt;code&gt;kill&lt;/code&gt;, &lt;code&gt;sed&lt;/code&gt;,
+&lt;code&gt;tail&lt;/code&gt;, &lt;code&gt;tr&lt;/code&gt;, &lt;code&gt;wc&lt;/code&gt;), the Korn Shell interpreter &lt;code&gt;ksh&lt;/code&gt;. Though not
+fully functional yet, it will provide true Unix&amp;nbsp;experience!&lt;/p&gt;
 &lt;h3&gt;syscalls&amp;nbsp;cleanup&lt;/h3&gt;
-&lt;p&gt;naprawienie getdirentries przywróciło ls dołożenie ioctl pozwoli nam
-zrobić obsługę terminala • naprawienie execve przywróciło działanie
-skryptów lua • dołożyliśmy wywołania systemowe, które przywróciły
-działanie setjmp i longjmp (lua + ksh powróciły do&amp;nbsp;życia)&lt;/p&gt;</content></entry><entry><title>Welcome!</title><link href="https://pwit81.github.io/yetanotherpagestest/welcome.html" rel="alternate"></link><published>2019-10-11T10:20:00+02:00</published><updated>2019-10-11T10:20:00+02:00</updated><author><name>Mimiker Team</name></author><id>tag:pwit81.github.io,2019-10-11:/yetanotherpagestest/welcome.html</id><content type="html">&lt;p&gt;Welcome to Mimiker&amp;nbsp;blog!&lt;/p&gt;
+&lt;p&gt;Things stop working from time to time. Earlier transformations of
+system call framework introduced bugs to &lt;code&gt;getdirentries&lt;/code&gt; and &lt;code&gt;execve&lt;/code&gt;
+syscalls, thus making &lt;code&gt;ls&lt;/code&gt; command and &lt;code&gt;lua&lt;/code&gt; interpreter crashy. This
+has been&amp;nbsp;fixed.&lt;/p&gt;
+&lt;h3&gt;progress in signal handling &lt;code&gt;setjmp&lt;/code&gt;/&lt;code&gt;longjmp&lt;/code&gt; now&amp;nbsp;save/restore&lt;/h3&gt;
+&lt;p&gt;signal mask. Earlier implementations didn&amp;#8217;t and that was another
+reason for buggy &lt;code&gt;lua&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="" title="[commit](https://github.com/cahirwpz/mimiker/commit/9794baa2c9f191b9e6190f19ebe242887a1ba8c8)"&gt;comment&lt;/a&gt;: &amp;lt;&amp;gt; (naprawienie getdirentries przywróciło ls dołożenie
+ioctl pozwoli nam zrobić obsługę terminala • naprawienie execve
+przywróciło działanie skryptów lua • dołożyliśmy wywołania systemowe,
+które przywróciły działanie setjmp i longjmp (lua + ksh powróciły do&amp;nbsp;życia))&lt;/p&gt;</content></entry><entry><title>Welcome!</title><link href="https://pwit81.github.io/yetanotherpagestest/welcome.html" rel="alternate"></link><published>2019-10-11T10:20:00+02:00</published><updated>2019-10-11T10:20:00+02:00</updated><author><name>Mimiker Team</name></author><id>tag:pwit81.github.io,2019-10-11:/yetanotherpagestest/welcome.html</id><content type="html">&lt;p&gt;Welcome to Mimiker&amp;nbsp;blog!&lt;/p&gt;
 &lt;p&gt;Good news&amp;nbsp;everyone!&lt;/p&gt;</content></entry></feed>
