@@ -49,12 +49,12 @@ ioctl()&nbsp;requests.</p>
 <p>And that&#8217;s precisely the reason we need <code>ioctl</code>. Mimiker terminal
 handling capabilities are mediocre. We need colors, fonts and special
 characters support in order to implement genuine terminal&nbsp;handling.</p>
-<h3>netbsd userland&nbsp;port</h3>
+<h3>NetBSD userland&nbsp;port</h3>
 <p>No <span class="caps">OS</span> kernel itself poses any value to end users. Therefore an
-extensive effort is being put to run usefull stuff on top of Mimiker
+extensive effort is being put to run useful stuff on top of Mimiker
 kernel. We already have some success stories here, like running Doom
 (in non-interactive mode) and lua script interpreter, but more
-elemenary command-line tools are needed. Our latest codebase brings in
+elementary command-line tools are needed. Our latest codebase brings in
 addition to simple NetBSD ports of <code>/usr/bin</code> tools (<code>cat</code>, <code>cmp</code>,
 <code>col</code>, <code>cut</code>, <code>echo</code>, <code>find</code>, <code>head</code>, <code>grep</code>, <code>join</code>, <code>kill</code>, <code>sed</code>,
 <code>tail</code>, <code>tr</code>, <code>wc</code>), the Korn Shell interpreter <code>ksh</code>. Though not
